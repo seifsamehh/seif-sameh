@@ -1,0 +1,38 @@
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    img {
+        width: 13%;
+        @media screen and (max-width: 768px) {
+            width: 60%;
+        }
+    }
+    p {
+        font-size: 1.3rem;
+        text-align: center;
+        user-select: none;
+        span {
+            color: var(--gold);
+            font-weight: 600;
+        }
+    }
+    a {
+        // position: relative;
+        color: var(--light);
+        font-size: 2.2rem;
+        // @media screen and (max-width: 768px) {
+        //     right: -3%;
+        // }
+        // @media (min-width: 769px) {
+        //     right: -20%;
+        // }
+    }
+}

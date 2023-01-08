@@ -1,0 +1,76 @@
+.header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+    img {
+        width: 13%;
+        @media screen and (max-width: 768px) {
+            width: 60%;
+        }
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 1.3rem;
+        flex-wrap: wrap;
+        .link {
+            cursor: pointer;
+            font-size: 18px;
+            position: relative;
+            white-space: nowrap;
+            color: var(--gold);
+        }
+        .link::before,
+        .link::after {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: currentColor;
+            top: 100%;
+            left: 0;
+            pointer-events: none;
+        }
+        .link::before {
+            content: '';
+        }
+        .link--ersa {
+            padding: 0 10px;
+            letter-spacing: 1px;
+            text-indent: 1px;
+            text-transform: uppercase;
+        }
+        
+        .link--ersa::before {
+            top: 50%;
+            height: 2px;
+            transform-origin: 100% 50%;
+            transform: scale3d(0, 1, 1);
+            transition: transform 0.3s cubic-bezier(0.4, 1, 0.8, 1);
+        }
+        
+        .link--ersa:hover::before {
+            transform-origin: 0% 50%;
+            transform: scale3d(1, 1, 1);
+        }
+        
+        .link--ersa span {
+            display: inline-block;
+            transition: transform 0.3s cubic-bezier(0.4, 1, 0.8, 1);
+        }
+        
+        .link--ersa:hover span {
+            transform: scale3d(1.1, 1.1, 1.1);
+        }
+        .react-bubbly-transitions__bubbly-link {
+            color: var(--light);
+            font-size: 1.5rem;
+            font-weight: 200;
+        }
+    }
+}

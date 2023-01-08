@@ -1,0 +1,79 @@
+// start about page
+.about-page {
+    height: 100vh;
+    display: flex;
+    background-image: url('../../../images/blob-scene-haikei.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    @media screen and (max-width: 768px) {
+        height: 100%;
+        padding: 1rem;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0;
+        }
+        .about-content {
+            max-width: 700px;
+            background: rgba(255,255,255,.8);        
+            border-radius: 10px;
+            padding: 20px;
+            margin-left: 5rem;
+            overflow: hidden;
+            @media screen and (max-width: 768px) {
+                padding: 10px;
+                margin-left: 0;
+            }
+            h1 {
+                color: var(--dark);
+                font-size: 3rem;
+                letter-spacing: 5px;
+                position: relative;
+                @media screen and (max-width: 768px) {
+                    font-size: 2rem;
+                }
+                &::before {
+                    content: 'ABOUT';
+                    position: absolute;
+                    right: -20px;
+                    top: -40px;
+                    color: rgba(0,0,0,0.4);
+                    font-size: 7rem;
+                    z-index: -1;
+                }
+            }
+            p {
+                color: var(--dark);
+                line-height: 2.6;
+                letter-spacing: 2px;
+                font-size: 1.1rem;
+                font-weight: 600;
+                @media screen and (max-width: 768px) {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .image {
+            img {
+                width: calc(100% - 60%);
+                height: 50%;
+                margin-left: 10rem;
+                border-radius: 10px;
+                @media screen and (max-width: 768px) {
+                    margin-left: 0;
+                    width: 100%;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+}
+// end about page

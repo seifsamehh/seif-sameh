@@ -1,0 +1,163 @@
+.projects-page .projects .project-1,
+.projects-page .projects .project-2,
+.projects-page .projects .project-3,
+.projects-page .projects .project-4,
+.projects-page .projects .project-5,
+.projects-page .projects .project-6,
+.projects-page .projects .project-7,
+.projects-page .projects .project-8 {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 1rem;
+  overflow: hidden;
+  border-bottom: 3px solid var(--gold);
+}
+@media screen and (max-width: 768px) {
+  .projects-page .projects .project-1,
+.projects-page .projects .project-2,
+.projects-page .projects .project-3,
+.projects-page .projects .project-4,
+.projects-page .projects .project-5,
+.projects-page .projects .project-6,
+.projects-page .projects .project-7,
+.projects-page .projects .project-8 {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .projects-page .projects .project-1 .left video,
+.projects-page .projects .project-2 .left video,
+.projects-page .projects .project-3 .left video,
+.projects-page .projects .project-4 .left video,
+.projects-page .projects .project-5 .left video,
+.projects-page .projects .project-6 .left video,
+.projects-page .projects .project-7 .left video,
+.projects-page .projects .project-8 .left video {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .projects-page .projects .project-1 .right,
+.projects-page .projects .project-2 .right,
+.projects-page .projects .project-3 .right,
+.projects-page .projects .project-4 .right,
+.projects-page .projects .project-5 .right,
+.projects-page .projects .project-6 .right,
+.projects-page .projects .project-7 .right,
+.projects-page .projects .project-8 .right {
+    background-color: var(--dark);
+  }
+}
+.projects-page .projects .project-1 .right p,
+.projects-page .projects .project-2 .right p,
+.projects-page .projects .project-3 .right p,
+.projects-page .projects .project-4 .right p,
+.projects-page .projects .project-5 .right p,
+.projects-page .projects .project-6 .right p,
+.projects-page .projects .project-7 .right p,
+.projects-page .projects .project-8 .right p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+.projects-page .projects .project-1 .right .buttons,
+.projects-page .projects .project-2 .right .buttons,
+.projects-page .projects .project-3 .right .buttons,
+.projects-page .projects .project-4 .right .buttons,
+.projects-page .projects .project-5 .right .buttons,
+.projects-page .projects .project-6 .right .buttons,
+.projects-page .projects .project-7 .right .buttons,
+.projects-page .projects .project-8 .right .buttons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.projects-page .projects .project-1 .right .buttons .cssbuttons-io-button,
+.projects-page .projects .project-2 .right .buttons .cssbuttons-io-button,
+.projects-page .projects .project-3 .right .buttons .cssbuttons-io-button,
+.projects-page .projects .project-4 .right .buttons .cssbuttons-io-button,
+.projects-page .projects .project-5 .right .buttons .cssbuttons-io-button,
+.projects-page .projects .project-6 .right .buttons .cssbuttons-io-button,
+.projects-page .projects .project-7 .right .buttons .cssbuttons-io-button,
+.projects-page .projects .project-8 .right .buttons .cssbuttons-io-button {
+  cursor: pointer;
+  background: var(--gold);
+  color: var(--light);
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+}
+.projects-page .projects .project-1 .right .buttons .cssbuttons-io-button .icon,
+.projects-page .projects .project-2 .right .buttons .cssbuttons-io-button .icon,
+.projects-page .projects .project-3 .right .buttons .cssbuttons-io-button .icon,
+.projects-page .projects .project-4 .right .buttons .cssbuttons-io-button .icon,
+.projects-page .projects .project-5 .right .buttons .cssbuttons-io-button .icon,
+.projects-page .projects .project-6 .right .buttons .cssbuttons-io-button .icon,
+.projects-page .projects .project-7 .right .buttons .cssbuttons-io-button .icon,
+.projects-page .projects .project-8 .right .buttons .cssbuttons-io-button .icon {
+  background: var(--light);
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+.projects-page .projects .project-1 .right .buttons .cssbuttons-io-button:hover .icon,
+.projects-page .projects .project-2 .right .buttons .cssbuttons-io-button:hover .icon,
+.projects-page .projects .project-3 .right .buttons .cssbuttons-io-button:hover .icon,
+.projects-page .projects .project-4 .right .buttons .cssbuttons-io-button:hover .icon,
+.projects-page .projects .project-5 .right .buttons .cssbuttons-io-button:hover .icon,
+.projects-page .projects .project-6 .right .buttons .cssbuttons-io-button:hover .icon,
+.projects-page .projects .project-7 .right .buttons .cssbuttons-io-button:hover .icon,
+.projects-page .projects .project-8 .right .buttons .cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+.projects-page .projects .project-1 .right .buttons .cssbuttons-io-button .icon svg,
+.projects-page .projects .project-2 .right .buttons .cssbuttons-io-button .icon svg,
+.projects-page .projects .project-3 .right .buttons .cssbuttons-io-button .icon svg,
+.projects-page .projects .project-4 .right .buttons .cssbuttons-io-button .icon svg,
+.projects-page .projects .project-5 .right .buttons .cssbuttons-io-button .icon svg,
+.projects-page .projects .project-6 .right .buttons .cssbuttons-io-button .icon svg,
+.projects-page .projects .project-7 .right .buttons .cssbuttons-io-button .icon svg,
+.projects-page .projects .project-8 .right .buttons .cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: var(--gold);
+}
+.projects-page .projects .project-1 .right .buttons .cssbuttons-io-button:hover .icon svg,
+.projects-page .projects .project-2 .right .buttons .cssbuttons-io-button:hover .icon svg,
+.projects-page .projects .project-3 .right .buttons .cssbuttons-io-button:hover .icon svg,
+.projects-page .projects .project-4 .right .buttons .cssbuttons-io-button:hover .icon svg,
+.projects-page .projects .project-5 .right .buttons .cssbuttons-io-button:hover .icon svg,
+.projects-page .projects .project-6 .right .buttons .cssbuttons-io-button:hover .icon svg,
+.projects-page .projects .project-7 .right .buttons .cssbuttons-io-button:hover .icon svg,
+.projects-page .projects .project-8 .right .buttons .cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+.projects-page .projects .project-1 .right .buttons .cssbuttons-io-button:active .icon,
+.projects-page .projects .project-2 .right .buttons .cssbuttons-io-button:active .icon,
+.projects-page .projects .project-3 .right .buttons .cssbuttons-io-button:active .icon,
+.projects-page .projects .project-4 .right .buttons .cssbuttons-io-button:active .icon,
+.projects-page .projects .project-5 .right .buttons .cssbuttons-io-button:active .icon,
+.projects-page .projects .project-6 .right .buttons .cssbuttons-io-button:active .icon,
+.projects-page .projects .project-7 .right .buttons .cssbuttons-io-button:active .icon,
+.projects-page .projects .project-8 .right .buttons .cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}/*# sourceMappingURL=projects.css.map */

@@ -1,0 +1,8 @@
+export {default as Home} from './home/Home'
+export {default as About} from './about/About'
+export {default as Projects} from './projects/Projects'
+export {default as Skills} from './skills/Skills'
+export {default as HomeAr} from './home-ar/HomeAr'
+export {default as AboutAr} from './about-ar/AboutAr'
+export {default as ProjectsAr} from './projects-ar/ProjectsAr'
+export {default as SkillsAr} from './skills-ar/SkillsAr'

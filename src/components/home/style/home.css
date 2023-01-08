@@ -1,0 +1,913 @@
+.home {
+  width: 100vw;
+  background-color: var(--dark);
+  position: relative;
+  overflow: hidden;
+}
+.home svg {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+.home .left-part {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+@media screen and (max-width: 768px) {
+  .home .left-part {
+    top: 10%;
+    left: 5%;
+  }
+}
+.home .left-part h1 {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+}
+@media screen and (max-width: 768px) {
+  .home .left-part h1 {
+    font-size: 3rem;
+  }
+}
+.home .left-part button {
+  cursor: pointer;
+  padding: 1em 3.3em;
+  transform: perspective(200px) rotateX(15deg);
+  font-weight: 900;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--light);
+  will-change: transform;
+  transition: all 0.3s;
+}
+.home .left-part button:hover {
+  transform: perspective(180px) rotateX(30deg) translateY(2px);
+}
+.home .left-part button:active {
+  transform: perspective(170px) rotateX(36deg) translateY(5px);
+}
+.home .left-part a {
+  color: var(--dark);
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 1.3rem;
+}
+.home .right-part {
+  position: absolute;
+  bottom: 0%;
+  right: -20%;
+}
+@media screen and (max-width: 768px) {
+  .home .right-part {
+    right: -10%;
+  }
+}
+.home .right-part img {
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .home .right-part img {
+    width: 80%;
+  }
+}
+
+.about-heading {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../../images/liquid-cheese.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-heading h1 {
+  font-weight: 900;
+  text-align: center;
+  color: var(--dark);
+  font-size: 8rem;
+  letter-spacing: 4px;
+}
+@media screen and (max-width: 640px) {
+  .about-heading h1 {
+    font-size: 3.7rem;
+    text-align: center;
+  }
+}
+@media (min-width: 641px) and (max-width: 768px) {
+  .about-heading h1 {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-heading h1 {
+    font-size: 6rem;
+  }
+}
+
+.about {
+  background-image: url("../../../images/liquid-cheese.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+.about .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .about .container {
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: flex-start;
+    margin-left: 0;
+  }
+}
+.about .container .about-content {
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 5rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .about .container .about-content {
+    padding: 10px;
+    margin-left: 0;
+  }
+}
+.about .container .about-content h1 {
+  color: var(--dark);
+  font-weight: 900;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .about .container .about-content h1 {
+    font-size: 2rem;
+  }
+}
+.about .container .about-content h1::before {
+  content: "ABOUT";
+  position: absolute;
+  right: -20px;
+  top: -40px;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 7rem;
+  z-index: -1;
+}
+.about .container .about-content p {
+  color: var(--dark);
+  line-height: 2.6;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .about .container .about-content p {
+    font-size: 1rem;
+  }
+}
+.about .container .image img {
+  width: 40%;
+  height: 50%;
+  margin-left: 10rem;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .about .container .image img {
+    width: 55%;
+  }
+}
+
+.icons {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--dark);
+}
+
+.icons .row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  font-size: 64px;
+}
+.icons .row div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons .icon {
+  color: rgba(255, 255, 255, 0.5);
+  transition: 1s;
+  padding: 0 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: default;
+}
+
+.icons .icon:hover {
+  transition: 0s;
+  color: var(--gold);
+  text-shadow: 0 0 120px var(--gold);
+}
+
+.skills-heading {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--dark);
+  background-image: url("../../../images/liquid-cheese.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills-heading h1 {
+  font-weight: 900;
+  text-align: center;
+  color: var(--dark);
+  font-size: 10rem;
+  letter-spacing: 4px;
+}
+@media screen and (max-width: 640px) {
+  .skills-heading h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+}
+@media (min-width: 641px) and (max-width: 768px) {
+  .skills-heading h1 {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .skills-heading h1 {
+    font-size: 7rem;
+  }
+}
+
+.skills {
+  width: 100vw;
+  background-color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+.skills .boxs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.skills .boxs .box-1,
+.skills .boxs .box-2,
+.skills .boxs .box-3,
+.skills .boxs .box-4,
+.skills .boxs .box-5,
+.skills .boxs .box-6,
+.skills .boxs .box-7,
+.skills .boxs .box-8,
+.skills .boxs .box-9,
+.skills .boxs .box-10,
+.skills .boxs .box-11,
+.skills .boxs .box-12,
+.skills .boxs .box-13,
+.skills .boxs .box-14,
+.skills .boxs .box-15,
+.skills .boxs .box-16,
+.skills .boxs .box-17,
+.skills .boxs .box-18,
+.skills .boxs .box-19,
+.skills .boxs .box-20,
+.skills .boxs .box-21 {
+  width: 30%;
+  height: 400px;
+  border: 2px solid var(--gold);
+  padding: 2rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.3rem;
+  transition: 0.3s;
+}
+.skills .boxs .box-1:hover,
+.skills .boxs .box-2:hover,
+.skills .boxs .box-3:hover,
+.skills .boxs .box-4:hover,
+.skills .boxs .box-5:hover,
+.skills .boxs .box-6:hover,
+.skills .boxs .box-7:hover,
+.skills .boxs .box-8:hover,
+.skills .boxs .box-9:hover,
+.skills .boxs .box-10:hover,
+.skills .boxs .box-11:hover,
+.skills .boxs .box-12:hover,
+.skills .boxs .box-13:hover,
+.skills .boxs .box-14:hover,
+.skills .boxs .box-15:hover,
+.skills .boxs .box-16:hover,
+.skills .boxs .box-17:hover,
+.skills .boxs .box-18:hover,
+.skills .boxs .box-19:hover,
+.skills .boxs .box-20:hover,
+.skills .boxs .box-21:hover {
+  background-color: var(--gold);
+}
+.skills .boxs .box-1:hover svg,
+.skills .boxs .box-2:hover svg,
+.skills .boxs .box-3:hover svg,
+.skills .boxs .box-4:hover svg,
+.skills .boxs .box-5:hover svg,
+.skills .boxs .box-6:hover svg,
+.skills .boxs .box-7:hover svg,
+.skills .boxs .box-8:hover svg,
+.skills .boxs .box-9:hover svg,
+.skills .boxs .box-10:hover svg,
+.skills .boxs .box-11:hover svg,
+.skills .boxs .box-12:hover svg,
+.skills .boxs .box-13:hover svg,
+.skills .boxs .box-14:hover svg,
+.skills .boxs .box-15:hover svg,
+.skills .boxs .box-16:hover svg,
+.skills .boxs .box-17:hover svg,
+.skills .boxs .box-18:hover svg,
+.skills .boxs .box-19:hover svg,
+.skills .boxs .box-20:hover svg,
+.skills .boxs .box-21:hover svg {
+  background-color: var(--light);
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .skills .boxs .box-1,
+.skills .boxs .box-2,
+.skills .boxs .box-3,
+.skills .boxs .box-4,
+.skills .boxs .box-5,
+.skills .boxs .box-6,
+.skills .boxs .box-7,
+.skills .boxs .box-8,
+.skills .boxs .box-9,
+.skills .boxs .box-10,
+.skills .boxs .box-11,
+.skills .boxs .box-12,
+.skills .boxs .box-13,
+.skills .boxs .box-14,
+.skills .boxs .box-15,
+.skills .boxs .box-16,
+.skills .boxs .box-17,
+.skills .boxs .box-18,
+.skills .boxs .box-19,
+.skills .boxs .box-20,
+.skills .boxs .box-21 {
+    width: 90%;
+    height: 100%;
+  }
+}
+.skills .boxs .box-1 img,
+.skills .boxs .box-2 img,
+.skills .boxs .box-3 img,
+.skills .boxs .box-4 img,
+.skills .boxs .box-5 img,
+.skills .boxs .box-6 img,
+.skills .boxs .box-7 img,
+.skills .boxs .box-8 img,
+.skills .boxs .box-9 img,
+.skills .boxs .box-10 img,
+.skills .boxs .box-11 img,
+.skills .boxs .box-12 img,
+.skills .boxs .box-13 img,
+.skills .boxs .box-14 img,
+.skills .boxs .box-15 img,
+.skills .boxs .box-16 img,
+.skills .boxs .box-17 img,
+.skills .boxs .box-18 img,
+.skills .boxs .box-19 img,
+.skills .boxs .box-20 img,
+.skills .boxs .box-21 img {
+  width: 30%;
+}
+.skills .boxs .box-1 svg,
+.skills .boxs .box-2 svg,
+.skills .boxs .box-3 svg,
+.skills .boxs .box-4 svg,
+.skills .boxs .box-5 svg,
+.skills .boxs .box-6 svg,
+.skills .boxs .box-7 svg,
+.skills .boxs .box-8 svg,
+.skills .boxs .box-9 svg,
+.skills .boxs .box-10 svg,
+.skills .boxs .box-11 svg,
+.skills .boxs .box-12 svg,
+.skills .boxs .box-13 svg,
+.skills .boxs .box-14 svg,
+.skills .boxs .box-15 svg,
+.skills .boxs .box-16 svg,
+.skills .boxs .box-17 svg,
+.skills .boxs .box-18 svg,
+.skills .boxs .box-19 svg,
+.skills .boxs .box-20 svg,
+.skills .boxs .box-21 svg {
+  width: 20%;
+}
+@media screen and (max-width: 768px) {
+  .skills .boxs .box-1 svg,
+.skills .boxs .box-2 svg,
+.skills .boxs .box-3 svg,
+.skills .boxs .box-4 svg,
+.skills .boxs .box-5 svg,
+.skills .boxs .box-6 svg,
+.skills .boxs .box-7 svg,
+.skills .boxs .box-8 svg,
+.skills .boxs .box-9 svg,
+.skills .boxs .box-10 svg,
+.skills .boxs .box-11 svg,
+.skills .boxs .box-12 svg,
+.skills .boxs .box-13 svg,
+.skills .boxs .box-14 svg,
+.skills .boxs .box-15 svg,
+.skills .boxs .box-16 svg,
+.skills .boxs .box-17 svg,
+.skills .boxs .box-18 svg,
+.skills .boxs .box-19 svg,
+.skills .boxs .box-20 svg,
+.skills .boxs .box-21 svg {
+    width: 40%;
+  }
+}
+.skills .boxs .box-1 h1,
+.skills .boxs .box-2 h1,
+.skills .boxs .box-3 h1,
+.skills .boxs .box-4 h1,
+.skills .boxs .box-5 h1,
+.skills .boxs .box-6 h1,
+.skills .boxs .box-7 h1,
+.skills .boxs .box-8 h1,
+.skills .boxs .box-9 h1,
+.skills .boxs .box-10 h1,
+.skills .boxs .box-11 h1,
+.skills .boxs .box-12 h1,
+.skills .boxs .box-13 h1,
+.skills .boxs .box-14 h1,
+.skills .boxs .box-15 h1,
+.skills .boxs .box-16 h1,
+.skills .boxs .box-17 h1,
+.skills .boxs .box-18 h1,
+.skills .boxs .box-19 h1,
+.skills .boxs .box-20 h1,
+.skills .boxs .box-21 h1 {
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 768px) {
+  .skills .boxs .box-1 h1,
+.skills .boxs .box-2 h1,
+.skills .boxs .box-3 h1,
+.skills .boxs .box-4 h1,
+.skills .boxs .box-5 h1,
+.skills .boxs .box-6 h1,
+.skills .boxs .box-7 h1,
+.skills .boxs .box-8 h1,
+.skills .boxs .box-9 h1,
+.skills .boxs .box-10 h1,
+.skills .boxs .box-11 h1,
+.skills .boxs .box-12 h1,
+.skills .boxs .box-13 h1,
+.skills .boxs .box-14 h1,
+.skills .boxs .box-15 h1,
+.skills .boxs .box-16 h1,
+.skills .boxs .box-17 h1,
+.skills .boxs .box-18 h1,
+.skills .boxs .box-19 h1,
+.skills .boxs .box-20 h1,
+.skills .boxs .box-21 h1 {
+    text-align: center;
+  }
+}
+.skills .boxs .box-20 img,
+.skills .boxs .box-21 img {
+  background-color: var(--light);
+}
+
+.projects-heading {
+  background-color: var(--dark);
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../../images/liquid-cheese.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects-heading h1 {
+  font-weight: 900;
+  text-align: center;
+  color: var(--dark);
+  font-size: 10rem;
+  letter-spacing: 4px;
+}
+@media screen and (max-width: 640px) {
+  .projects-heading h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+}
+@media (min-width: 641px) and (max-width: 768px) {
+  .projects-heading h1 {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .projects-heading h1 {
+    font-size: 7rem;
+  }
+}
+
+.work {
+  background-image: url("../../../images/liquid-cheese.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: var(--dark);
+  padding: 50px 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1023px) {
+  .work {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .work {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+}
+.work .work-boxs {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.work .work-boxs .first,
+.work .work-boxs .second {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .work .work-boxs .first,
+.work .work-boxs .second {
+    flex-direction: column;
+    gap: 6rem;
+  }
+}
+.work .work-boxs .first div,
+.work .work-boxs .second div {
+  height: 300px;
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 1rem;
+  border-radius: 14px;
+  min-width: 400px;
+  margin-left: -130px;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .work .work-boxs .first div,
+.work .work-boxs .second div {
+    width: 50%;
+    margin-left: 0;
+  }
+}
+.work .work-boxs .first div a,
+.work .work-boxs .second div a {
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+  position: relative;
+  top: 80px;
+  height: 100%;
+  color: var(--dark);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .work .work-boxs .first div a,
+.work .work-boxs .second div a {
+    top: 70px;
+  }
+}
+.work .work-boxs .first div:hover,
+.work .work-boxs .second div:hover {
+  transform: translateY(-16px) rotate(3deg);
+}
+.work .work-boxs .first div:hover ~ div,
+.work .work-boxs .second div:hover ~ div {
+  transform: translateX(130px);
+}
+.work .work-boxs .first .box-1,
+.work .work-boxs .second .box-1 {
+  background-image: url("../../../images/project-6.webp");
+}
+.work .work-boxs .first .box-2,
+.work .work-boxs .second .box-2 {
+  background-image: url("../../../images/project-3.webp");
+}
+.work .work-boxs .first .box-3,
+.work .work-boxs .second .box-3 {
+  background-image: url("../../../images/project-1.webp");
+}
+.work .work-boxs .first .box-4,
+.work .work-boxs .second .box-4 {
+  background-image: url("../../../images/project-2.webp");
+}
+.work .work-boxs .first .box-5,
+.work .work-boxs .second .box-5 {
+  background-image: url("../../../images/project-5.webp");
+}
+.work .work-boxs .first .box-6,
+.work .work-boxs .second .box-6 {
+  background-image: url("../../../images/project-9.webp");
+}
+.work .work-boxs .first .box-7,
+.work .work-boxs .second .box-7 {
+  background-image: url("../../../images/project-7.webp");
+}
+.work .work-boxs .first .box-8,
+.work .work-boxs .second .box-8 {
+  background-image: url("../../../images/project-8.webp");
+}
+
+.snippet-heading {
+  background-color: var(--dark);
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../../images/liquid-cheese.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.snippet-heading h1 {
+  font-weight: 900;
+  text-align: center;
+  color: var(--dark);
+  font-size: 10rem;
+  letter-spacing: 4px;
+}
+@media screen and (max-width: 640px) {
+  .snippet-heading h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+@media (min-width: 641px) and (max-width: 768px) {
+  .snippet-heading h1 {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .snippet-heading h1 {
+    font-size: 7rem;
+  }
+}
+
+.snipet {
+  width: 100vw;
+  background-color: var(--dark);
+  position: relative;
+  overflow: hidden;
+}
+.snipet svg {
+  width: 100vw;
+  height: 120vh;
+  z-index: -1;
+}
+@media screen and (max-width: 640px) {
+  .snipet svg {
+    height: 210vh;
+  }
+}
+@media (min-width: 641px) and (max-width: 768px) {
+  .snipet svg {
+    height: 450vh;
+  }
+}
+.snipet .photos {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.snipet .photos .upper,
+.snipet .photos .footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .snipet .photos .upper,
+.snipet .photos .footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.snipet .photos .upper img,
+.snipet .photos .footer img {
+  width: 30%;
+  height: 100%;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+@media screen and (max-width: 768px) {
+  .snipet .photos .upper img,
+.snipet .photos .footer img {
+    width: 80%;
+  }
+}
+
+.contact-heading {
+  background-color: var(--dark);
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../../images/liquid-cheese.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-heading h1 {
+  font-weight: 900;
+  text-align: center;
+  color: var(--dark);
+  font-size: 10rem;
+  letter-spacing: 4px;
+}
+@media screen and (max-width: 640px) {
+  .contact-heading h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+}
+@media (min-width: 641px) and (max-width: 768px) {
+  .contact-heading h1 {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact-heading h1 {
+    font-size: 7rem;
+  }
+}
+
+.contact {
+  background-color: var(--dark);
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+  }
+}
+.contact #contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact #contact-info .links {
+  display: flex;
+  min-width: 500px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .contact #contact-info .links {
+    flex-wrap: wrap;
+    gap: 1rem;
+    min-width: 0;
+    max-width: 500px;
+    margin: 2rem 0;
+  }
+}
+.contact #contact-info a {
+  text-decoration: none;
+  color: var(--light);
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .contact #contact-info a {
+    margin: 2rem 0;
+  }
+}
+.contact #contact-info .links a {
+  display: block;
+  position: relative;
+}
+.contact #contact-info .links a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+.contact #contact-info .links a:hover::after {
+  --transformed-box-diagonal-length: 164%;
+  width: var(--transformed-box-diagonal-length);
+  left: calc((100% - var(--transformed-box-diagonal-length)) / 2);
+}
+.contact #contact-info .links a div {
+  position: relative;
+  display: block;
+  width: 55px;
+  height: 55px;
+  transition: transform 0.3s;
+}
+.contact #contact-info .links a:hover div {
+  transform: rotate(-35deg) skew(20deg);
+}
+.contact .links a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.contact .links a span:nth-child(5) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.contact .links a:hover span:nth-child(5) {
+  transform: translate(20px, -20px);
+  opacity: 1;
+}
+.contact .links a:hover span:nth-child(4) {
+  transform: translate(15px, -15px);
+  opacity: 0.8;
+}
+.contact .links a:hover span:nth-child(3) {
+  transform: translate(10px, -10px);
+  opacity: 0.6;
+}
+.contact .links a:hover span:nth-child(2) {
+  transform: translate(5px, -5px);
+  opacity: 0.4;
+}
+.contact .links a:hover span:nth-child(1) {
+  opacity: 0.2;
+}
+.contact .links a.linkedin-background span {
+  background: #0072b1;
+}
+.contact .links a.github-background span {
+  background: #171515;
+}
+.contact .links a.gmail-background span {
+  background: #ea4335;
+}
+.contact .links a.phone-background span {
+  background: #34a853;
+}/*# sourceMappingURL=home.css.map */

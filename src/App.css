@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;600;900&display=swap");
+/* start global variables */
+:root {
+  --gold: #cd9900;
+  --dark: #222222;
+  --light: #fff;
+}
+/* end global variables */
+/* start global components */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Titillium Web", sans-serif;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+section {
+  overflow: hidden;
+}
+.about,
+.about-ar,
+.work,
+.work-ar,
+.contact,
+.contact-ar {
+  padding: 100px 0;
+}
+#dark {
+  background-color: var(--dark);
+  color: var(--light);
+}
+#dark footer a {
+  color: var(--light);
+}
+#light {
+  background-color: var(--light);
+  color: var(--dark);
+}
+#light header .react-bubbly-transitions__bubbly-link {
+  color: var(--dark);
+}
+#light .home .terminal_body .information,
+#light .home-ar .terminal_body .information {
+  color: var(--light);
+}
+#light .work div a,
+#light .work-ar div a {
+  color: var(--light);
+}
+#light .home,
+#light .home-ar {
+  background-color: var(--light);
+}
+#light .home .left-part button,
+#light .home-ar .left-part button {
+  background-color: var(--dark);
+  color: var(--light);
+}
+#light .home .left-part a,
+#light .home-ar .left-part a {
+  color: var(--light);
+}
+#light .about-heading h1,
+#light .about-heading-ar h1,
+#light .skills-heading h1,
+#light .skills-heading-ar h1,
+#light .projects-heading h1,
+#light .projects-heading-ar h1,
+#light .snippet-heading h1,
+#light .snippet-heading-ar h1,
+#light .contact-heading h1,
+#light .contact-heading-ar h1 {
+  color: var(--light);
+}
+#light .bgg .home .box .title h1,
+#light .bgg-ar .home-ar .box .title h1,
+#light .bgg .home .box .role p,
+#light .bgg-ar .home-ar .box .role p {
+  color: var(--dark);
+}
+#light .work-ar div a {
+  color: var(--light);
+}
+@media screen and (max-width: 640px) {
+  #light .about-heading h1,
+  #light .about-heading-ar h1,
+  #light .skills-heading h1,
+  #light .skills-heading-ar h1,
+  #light .projects-heading h1,
+  #light .projects-heading-ar h1,
+  #light .snippet-heading h1,
+  #light .snippet-heading-ar h1,
+  #light .contact-heading h1,
+  #light .contact-heading-ar h1 {
+    font-size: 3.7rem;
+    text-align: center;
+  }
+}
+@media (min-width: 641px) and (max-width: 768px) {
+  #light .about-heading h1,
+  #light .about-heading-ar h1,
+  #light .skills-heading h1,
+  #light .skills-heading-ar h1,
+  #light .projects-heading h1,
+  #light .projects-heading-ar h1,
+  #light .snippet-heading h1,
+  #light .snippet-heading-ar h1,
+  #light .contact-heading h1,
+  #light .contact-heading-ar h1 {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  #light .about-heading h1,
+  #light .about-heading-ar h1,
+  #light .skills-heading h1,
+  #light .skills-heading-ar h1,
+  #light .projects-heading h1,
+  #light .projects-heading-ar h1,
+  #light .snippet-heading h1,
+  #light .snippet-heading-ar h1,
+  #light .contact-heading h1,
+  #light .contact-heading-ar h1 {
+    font-size: 6rem;
+  }
+}
+#light .skills-heading,
+#light .skills-heading-ar,
+#light .icons,
+#light .icons-ar,
+#light .projects-heading,
+#light .projects-heading-ar,
+#light .work,
+#light .work-ar,
+#light .snippet-heading,
+#light .snippet-heading-ar,
+#light .snipet,
+#light .snipet-ar,
+#light .skills,
+#light .skills-ar,
+#light .contact-heading,
+#light .contact-heading-ar,
+#light .contact,
+#light .contact-ar {
+  background-color: var(--light);
+}
+#light input,
+#light textarea {
+  background-color: var(--gold);
+  caret-color: var(--light);
+  transition: 0.3s;
+}
+#light input:focus,
+#light textarea:focus {
+  border-bottom-color: var(--dark);
+}
+#light input[type="submit"],
+#light input[type="reset"] {
+  background-color: var(--dark);
+}
+#light .icons .icon,
+#light .icons-ar .icon {
+  color: var(--dark);
+  transition: 1s;
+  padding: 0 5px;
+  user-select: none;
+  cursor: default;
+}
+#light .icons .icon:hover,
+#light .icons-ar .icon:hover {
+  transition: 0s;
+  color: var(--gold);
+  text-shadow: 0 0 120px var(--gold);
+}
+#light .bgg-ar .home-ar .content .text p,
+#light .bgg .home .content .text p {
+  color: var(--dark);
+}
+#light .bgg-ar .container a,
+#light .bgg .container a {
+  color: var(--dark);
+}
+#light footer {
+  background-color: var(--light);
+  color: var(--dark);
+}
+#light footer a {
+  color: var(--dark);
+}
+#light .about-page,
+#light .about-ar-page,
+#light .skills-page {
+  background-image: url("./images/blob-scene-haikei-light.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#light .about-page .container .about-content,
+#light .about-ar-page .container .about-content {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#light .about-page .container .about-content h1,
+#light .about-page .container .about-content p,
+#light .about-ar-page .container .about-content h1,
+#light .about-ar-page .container .about-content p {
+  color: var(--light);
+}
+#light .projects-page .projects .right {
+  background-color: var(--light);
+}
+#light .home .right-part .card,
+#light .home-ar .right-part .card {
+  background-color: var(--dark);
+}
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+  z-index: 20;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--gold);
+  transition: 0.5s;
+  border-radius: 30px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px var(--light);
+  background: var(--background);
+  transition: 0.5s;
+}
+input:checked + .slider {
+  background-color: var(--gold);
+}
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px var(--light);
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+::selection {
+  background-color: var(--gold);
+  color: var(--light);
+}
+::placeholder {
+  color: var(--light);
+}
+img,
+h1,
+button,
+a {
+  user-select: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--dark);
+}
+.wrapper {
+  width: 200px;
+  height: 60px;
+  position: relative;
+  z-index: 1;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--light);
+  left: 15%;
+  transform-origin: 50%;
+  animation: circle7124 0.5s alternate infinite ease;
+}
+
+@keyframes circle7124 {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
+  }
+
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+
+  100% {
+    top: 0%;
+  }
+}
+
+.circle:nth-child(2) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+
+.circle:nth-child(3) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+}
+
+.shadow {
+  width: 20px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 62px;
+  transform-origin: 50%;
+  z-index: -1;
+  left: 15%;
+  filter: blur(1px);
+  animation: shadow046 0.5s alternate infinite ease;
+}
+
+@keyframes shadow046 {
+  0% {
+    transform: scaleX(1.5);
+  }
+
+  40% {
+    transform: scaleX(1);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scaleX(0.2);
+    opacity: 0.4;
+  }
+}
+
+.shadow:nth-child(4) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+
+.shadow:nth-child(5) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+}
+
+/* end global components */

@@ -1,0 +1,38 @@
+footer {
+  background-color: var(--dark);
+  color: var(--light);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+footer img {
+  width: 13%;
+}
+@media screen and (max-width: 768px) {
+  footer img {
+    width: 60%;
+  }
+}
+footer p {
+  font-size: 1.3rem;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+footer p span {
+  color: var(--gold);
+  font-weight: 600;
+}
+footer a {
+  color: var(--light);
+  font-size: 2.2rem;
+}/*# sourceMappingURL=footer.css.map */

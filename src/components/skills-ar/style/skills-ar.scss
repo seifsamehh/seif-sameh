@@ -1,0 +1,84 @@
+// start skills
+.skills-page {
+  width: 100vw;
+  background-color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  .boxs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    .box-1,
+    .box-2,
+    .box-3,
+    .box-4,
+    .box-5,
+    .box-6,
+    .box-7,
+    .box-8,
+    .box-9,
+    .box-10,
+    .box-11,
+    .box-12,
+    .box-13,
+    .box-14,
+    .box-15,
+    .box-16,
+    .box-17,
+    .box-18,
+    .box-19,
+    .box-20,
+    .box-21 {
+      width: 30%;
+      height: 400px;
+      border: 2px solid var(--gold);
+      border-radius: 20px;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 1.3rem;
+      transition: 0.3s;
+      &:hover {
+        background-color: var(--gold);
+      }
+      &:hover svg {
+        background-color: var(--light);
+        border-radius: 50%;
+      }
+      @media screen and (max-width: 768px) {
+        width: 90%;
+        height: 100%;
+      }
+      img {
+        width: 30%;
+      }
+      svg {
+        width: 20%;
+        @media screen and (max-width: 768px) {
+          width: 40%;
+        }
+      }
+      h1 {
+        font-weight: 100;
+        letter-spacing: 2px;
+        @media screen and (max-width: 768px) {
+          text-align: center;
+        }
+      }
+    }
+    .box-20,
+    .box-21 {
+      img {
+        background-color: var(--light);
+      }
+    }
+  }
+}
+// end skills

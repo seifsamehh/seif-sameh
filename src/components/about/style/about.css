@@ -1,0 +1,87 @@
+.about-page {
+  height: 100vh;
+  display: flex;
+  background-image: url("../../../images/blob-scene-haikei.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 768px) {
+  .about-page {
+    height: 100%;
+    padding: 1rem;
+  }
+}
+.about-page .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .about-page .container {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+}
+.about-page .container .about-content {
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 5rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .about-page .container .about-content {
+    padding: 10px;
+    margin-left: 0;
+  }
+}
+.about-page .container .about-content h1 {
+  color: var(--dark);
+  font-size: 3rem;
+  letter-spacing: 5px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .about-page .container .about-content h1 {
+    font-size: 2rem;
+  }
+}
+.about-page .container .about-content h1::before {
+  content: "ABOUT";
+  position: absolute;
+  right: -20px;
+  top: -40px;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 7rem;
+  z-index: -1;
+}
+.about-page .container .about-content p {
+  color: var(--dark);
+  line-height: 2.6;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .about-page .container .about-content p {
+    font-size: 1rem;
+  }
+}
+.about-page .container .image img {
+  width: 40%;
+  height: 50%;
+  margin-left: 10rem;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .about-page .container .image img {
+    margin-left: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+}/*# sourceMappingURL=about.css.map */

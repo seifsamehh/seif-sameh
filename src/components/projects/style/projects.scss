@@ -1,0 +1,90 @@
+.projects-page {
+    .projects {
+        .project-1,
+        .project-2,
+        .project-3,
+        .project-4,
+        .project-5,
+        .project-6,
+        .project-7,
+        .project-8 {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            padding: 1rem;
+            overflow: hidden;
+            border-bottom: 3px solid var(--gold);
+            @media screen and (max-width: 768px) {
+                flex-wrap: wrap;
+            }
+            .left {
+                video {
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                    }
+                }
+            }
+            .right {
+                @media screen and (max-width: 768px) {
+                    background-color: var(--dark);
+                }
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    line-height: 2;
+                    margin-bottom: 2rem;
+                }
+                .buttons {
+                    display: flex;
+                    align-items: center;
+                    gap: 2rem;
+                    .cssbuttons-io-button {
+                        cursor: pointer;
+                        background: var(--gold);
+                        color: var(--light);
+                        padding: 0.35em;
+                        padding-left: 1.2em;
+                        font-size: 17px;
+                        font-weight: 500;
+                        border-radius: 0.9em;
+                        border: none;
+                        letter-spacing: 0.05em;
+                        display: flex;
+                        align-items: center;
+                        overflow: hidden;
+                        position: relative;
+                        height: 2.8em;
+                        padding-right: 3.3em;
+                    }
+                    .cssbuttons-io-button .icon {
+                        background: var(--light);
+                        margin-left: 1em;
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 2.2em;
+                        width: 2.2em;
+                        border-radius: 0.7em;
+                        right: 0.3em;
+                        transition: all 0.3s;
+                    }
+                    .cssbuttons-io-button:hover .icon {
+                        width: calc(100% - 0.6em);
+                    }
+                    .cssbuttons-io-button .icon svg {
+                        width: 1.1em;
+                        transition: transform 0.3s;
+                        color: var(--gold);
+                    }
+                    .cssbuttons-io-button:hover .icon svg {
+                        transform: translateX(0.1em);
+                    }
+                    .cssbuttons-io-button:active .icon {
+                        transform: scale(0.95);
+                    }
+                }
+            }
+        }
+    }
+}
